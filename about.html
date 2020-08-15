@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quality Food | About</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Chela+One|Chicle|Damion|Dancing+Script:700|Grand+Hotel|Great+Vibes|Pacifico|Sacramento|Tangerine:700|Passion+One" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<style type="text/css">
+#about-showcase{
+	position: relative;
+	width: 100%;
+	height: 70vh;
+	text-align: center;
+	background: url('./images/about-head-img.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#about-showcase:before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+}
+#about-showcase h1{
+	position: relative;
+	z-index: 10;
+	color: white;
+	top: 40%;
+	font-size: 4em;
+	font-family: 'Pacifico', sans-serif;
+	text-shadow: 0 5px 5px rgba(0,0,0,0.3);
+}
+
+#about-detail{
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 60px 0;
+	background: url('../images/black-bean-close-up-cooked.jpg');
+}
+#about-detail:before{
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(252,246,244,0.95);
+}
+#about-detail .about-page-img-wrap{
+	position: relative;
+	height: 350px;
+	margin: 20px 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#about-detail .about-page-img-wrap img{
+	position: relative;
+	width: 40%;
+	margin: 10px;
+	height: 150px;
+	transition: 0.3s ease-in;
+}
+#about-detail .about-page-img-wrap img:hover{
+	transform: scale(1.5);
+	z-index: 10;
+}
+#about-detail div{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#about-detail div h3{
+	font-family: 'Damion', sans-serif;
+	font-weight: bold;
+	font-size: 35px;
+}
+#about-detail div h2{
+	font-family: 'Damion', sans-serif;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+/*Testimonial*/
+#testimonials{
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 50px 0;
+	background: #f3f2f2;
+}
+#testimonials .testimonials-title{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	padding-bottom: 10px;
+}
+#testimonials .testimonials-title h1{
+	font-size: 45px;
+    color: black;
+	text-transform: capitalize;
+	font-family: 'Pacifico', sans-serif;
+	text-shadow: 0 5px 5px rgba(0,0,0,0.3);
+}
+#testimonials .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 40px;
+}
+#testimonials .container .wrap{
+	position: relative;
+	width: 55%;
+	min-width: 480px;
+	margin: 50px 0;
+	text-align: center;
+	overflow: hidden;
+}
+#testimonials .container ul{
+	position: relative;
+	width: 100%;
+	left: 0;
+	list-style: none;
+	display: flex;
+	padding: 0;
+	transition: 0.3s;
+}
+#testimonials .container ul li{
+	position: relative;
+	min-width: 100%;
+}
+#testimonials .container ul li .txt-wrapper{
+	position: relative;
+	color: #1a1a1a;
+}
+#testimonials .container ul li h4{
+	text-transform: uppercase;
+	margin-top: 20px;
+	font-family: 'Chicle', sans-serif;
+}
+#testimonials .container ul li h5{
+	color: #f01849;
+	font-size: 16px;
+}
+#testimonials .container ul li p{
+	font-size: 13px;
+	line-height: 1.6;
+	color: #1a1a1a;
+	font-weight: normal;
+}
+#testimonials .container .img-wrapper{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#testimonials .container .img-wrapper img{
+	position: relative;
+	width: 60px;
+	height: 60px;
+	margin: 0 10px;
+	cursor: pointer;
+	opacity: 0.3;
+	bottom: 0;
+	border-radius: 50%;
+	transition: 0.3s ease-in;
+}
+#testimonials .container .img-wrapper .active-img{
+	position: relative;
+	opacity: 1;
+	box-shadow: 0 0 12px 0 rgba(0,0,0,0.5);
+	bottom: 8px;
+}
+@media (max-width: 767px){
+#about-detail{
+	text-align: center;
+}
+#about-detail div h3{
+	margin-bottom: 20px;
+}
+}
+
+#branch-location{
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 60px 0;
+	background: #f3f2f2;
+	text-align: center;
+}
+#branch-location .row{
+	margin-top: 50px;
+}
+#branch-location h1{
+	text-align: center;
+	font-family: 'Pacifico', sans-serif;
+	text-shadow: 0 5px 5px rgba(0,0,0,0.3);
+	margin-bottom: 20px;
+	color: black;
+}
+#branch-location img{
+	width: 100%;
+}
+#branch-location h5{
+	color: red;
+	text-align: left;
+	margin-bottom: 20px;
+}
+#branch-location p{
+	text-align: left;
+}
+#branch-location .branch-wrap{
+	padding: 10px;
+}
+#branch-location .branch-wrap div{
+	padding: 10px 0;
+	border-bottom: 1px solid #d3d1d1;
+}
+#branch-location .branch-wrap div i{
+	color: red;
+	margin-right: 5px;
+}
+#branch-location .branch-wrap div:nth-child(4){
+	border-bottom: none;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="nav-bar">
+	<div class="logo-txt">
+		<a href="index.html">Quality</a>
+		<i><span>Fresh</span><span>Food</span></i>
+	</div>
+	<ul class="upper-nav-list">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+	<ul class="nav-list-wide">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+	<div class="nav-icon-wrapper">
+		<div id="nav-icon-btn">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+		</div>
+		<div id="nav-icon-txt">
+			<div class="nav-icon-txt-menu">
+				<span class="char-1">M</span>
+				<span class="char-2">e</span>
+				<span class="char-3">n</span>
+				<span class="char-4">u</span>
+			</div>
+		    <div>
+				<span class="char-1">B</span>
+				<span class="char-2">a</span>
+				<span class="char-3">c</span>
+				<span class="char-4">k</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- About Showcase -->
+<section id="about-showcase">
+	<h1>We are happy to see you here</h1>
+</section>
+
+<!-- About Detail-->
+<section id="about-detail">
+	 <div class="container">
+	 	<div class="row">
+	 		<div class="col-lg-5 col-md-6 col-sm-12">
+	 			<h3>About Our Restaurant</h3>
+	 			<p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit purus et luctus malesuada. Aliquam fermentum, mauris vitae mattis dictum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit purus et luctus malesuada. Aliquam fermentum, mauris vitae mattis dictum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit purus et luctus malesuada. Aliquam fermentum, mauris vitae mattis dictum Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit purus et luctus malesuada. Aliquam fermentum, mauris vitae mattis dictum Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	 		</div>
+	 		<section class="about-page-img-wrap col-lg-7 col-md-6 col-sm-12">
+	 			<img src="images/restaurant-one.jpg">
+	 			<img src="images/restaurant-two.jpg">
+	 			<img src="images/restaurant-three.jpg">
+	 			<img src="images/restaurant-four.jpg">
+			</section>
+			<div class="col-lg-6 col-md-6 col-sm-12">
+	 			<h2>Our Mission</h2>
+	 			<p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit purus et luctus malesuada. Aliquam fermentum, mauris vitae mattis dictum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit purus et luctus malesuada. Aliquam fermentum, mauris vitae mattis dictum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit purus et luctus malesuada.</p>
+	 		</div>
+	 		<div class="col-lg-6 col-md-6 col-sm-12">
+	 			<h2>Our Vission</h2>
+	 			<p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit purus et luctus malesuada. Aliquam fermentum, mauris vitae mattis dictum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit purus et luctus malesuada. Aliquam fermentum, mauris vitae mattis dictum Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	 		</div>
+	 	</div>
+	 </div>
+</section>
+
+<!-- Testimonial -->
+<section id="testimonials">
+	<div class="testimonials-title">
+		<h1>Customers Review</h1>
+	</div>
+	<div class="container">  
+		<div class="wrap">
+	      <ul>
+			<li>
+				<div class="txt-wrapper">
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit purus et luctus malesuada. Aliquam fermentum, mauris vitae mattis dictum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit purus et luctus malesuada. Aliquam fermentum, mauris vitae mattis dictum"</p>
+					<h4>Brad Martin</h4>
+					<h5>- Customer -</h5>
+				</div>
+			</li>
+			<li>
+				<div class="txt-wrapper">
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit purus et luctus malesuada. Aliquam fermentum, mauris vitae mattis dictum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit purus et luctus malesuada. Aliquam fermentum, mauris vitae mattis dictum"</p>
+					<h4>Alex William</h4>
+					<h5>- Customer -</h5>
+				</div>
+			</li>
+			<li>
+				<div class="txt-wrapper">
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit purus et luctus malesuada. Aliquam fermentum, mauris vitae mattis dictum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit purus et luctus malesuada. Aliquam fermentum, mauris vitae mattis dictum"</p>
+					<h4>Peter Joe</h4>
+					<h5>- Customer -</h5>
+				</div>
+			</li>
+	      </ul>
+		</div>
+		<div class="img-wrapper">
+			<img class="active-img one" src="images/black-and-white-boy-casual-555790.jpg">
+			<img class="two" src="images/black-and-white-boy-casual-555790.jpg">
+			<img class="three" src="images/black-and-white-boy-casual-555790.jpg">
+		</div>
+	</div>
+</section>
+
+<!-- Services -->
+<section id="services">
+	<h1>Our Service</h1>
+	<div class="row">
+		<div class="col-lg-3 col-md-6 col-sm-12">
+			<i class="fas fa-coffee"></i>
+			<h4>Breakfast</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet leo magna. Praesent vestibulum condimentum vehicula. Donec sed ultrices ex, et fringilla neque.</p>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-12">
+			<i class="fas fa-pizza-slice"></i>
+			<h4>Lunch</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet leo magna. Praesent vestibulum condimentum vehicula. Donec sed ultrices ex, et fringilla neque.</p>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-12">
+			<i class="fas fa-hamburger"></i>
+			<h4>Dinner</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet leo magna. Praesent vestibulum condimentum vehicula. Donec sed ultrices ex, et fringilla neque.</p>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-12">
+			<i class="fas fa-utensils"></i>
+			<h4>Fresh Food</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet leo magna. Praesent vestibulumcondimentum vehicula. Donec sed ultrices ex, et fringilla neque.</p>
+		</div>
+	</div>
+</section>
+
+<!-- Chef -->
+<section id="chef">
+	<h1>Our Chef's</h1>
+	<div class="container">
+		<div class="row">
+			<div class="box col-lg-4 col-md-4 col-sm-12">
+				<img src="images/chef-1.png">
+				<h3>Brad Martin</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet leo magna</p>
+				<div>
+					<i class="fab fa-facebook-square"></i>
+    				<i class="fab fa-twitter-square"></i>
+    				<i class="fab fa-instagram"></i>
+    				<i class="fab fa-google-plus-square"></i>
+			    </div>
+		    </div>
+		    <div class="box col-lg-4 col-md-4 col-sm-12">
+				<img src="images/chef-2.png">
+				<h3>Lana Paul</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet leo magna</p>
+				<div>
+					<i class="fab fa-facebook-square"></i>
+    				<i class="fab fa-twitter-square"></i>
+    				<i class="fab fa-instagram"></i>
+    				<i class="fab fa-google-plus-square"></i>
+			    </div>
+		    </div>
+		    <div class="box col-lg-4 col-md-4 col-sm-12">
+				<img src="images/chef-3.png">
+				<h3>Adam Steve</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet leo magna</p>
+				<div>
+					<i class="fab fa-facebook-square"></i>
+    				<i class="fab fa-twitter-square"></i>
+    				<i class="fab fa-instagram"></i>
+    				<i class="fab fa-google-plus-square"></i>
+			    </div>
+		    </div>
+		</div>
+	</div>
+</section>
+
+<!-- Newsletter -->
+<section id="newsletter" class="container-fluid">
+	<h3>Subscribe To Our Newsletter </h3>
+	<div>
+		<input type="text" placeholder="Enter your Email...">
+	    <input type="submit" value="Subscribe">
+	</div>
+</section>
+
+<!-- Branch Location -->
+<section id="branch-location">
+	<div class="container">
+		<h1>Our Branches</h1>
+		<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit purus <br/> et luctus malesuada. Aliquam fermentum</span>
+	    <div class="row">
+	    	<div class="col-lg-4 col-md-4 col-sm-12">
+	    		<div class="branch-wrap">
+		     		<img src="images/london.jpg">
+		     		<div>
+		     			<h5>London</h5>
+		     			<p><i class="fas fa-map-marker-alt"></i> B-9223 ,Your Address Here,City,Country.987097</p>
+		     		</div>
+		     		<div>
+		     			<p><i class="fas fa-phone"></i> 123-456-7890</p>
+		     		</div>
+		     		<div>
+		     			<p><i class="fas fa-envelope"></i> mylocation@gmail.com</p>
+		     		</div>
+		     	</div>
+	    	</div>
+	     	<div class="col-lg-4 col-md-4 col-sm-12">
+	     		<div class="branch-wrap">
+		     		<img src="images/los-angeles.jpg">
+		     		<div>
+		     			<h5>Los Angeles</h5>
+		     			<p><i class="fas fa-map-marker-alt"></i> B-9223 ,Your Address Here,City,Country.987097</p>
+		     		</div>
+		     		<div>
+		     			<p><i class="fas fa-phone"></i> 123-456-7890</p>
+		     		</div>
+		     		<div>
+		     			<p><i class="fas fa-envelope"></i> mylocation@gmail.com</p>
+		     		</div>
+		     	</div>
+	     	</div>
+	     	<div class="col-lg-4 col-md-4 col-sm-12">
+	     		<div class="branch-wrap">
+		     		<img src="images/sydney.jpg">
+		     		<div>
+		     			<h5>Sydney</h5>
+		     			<p><i class="fas fa-map-marker-alt"></i> B-9223 ,Your Address Here,City,Country.987097</p>
+		     		</div>
+		     		<div>
+		     			<p><i class="fas fa-phone"></i> 123-456-7890</p>
+		     		</div>
+		     		<div>
+		     			<p><i class="fas fa-envelope"></i> mylocation@gmail.com</p>
+		     		</div>
+		     	</div>
+	     	</div>
+	     	
+	    </div>
+	</div>
+</section>
+
+<!-- Location -->
+<section id="location">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12617.563774965653!2d-122.43172929272832!3d37.75743048631476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e1779aa70a7%3A0xa618e4eff1228d60!2sMission+Dolores+Park!5e0!3m2!1sen!2sus!4v1558111414735!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
+
+<!-- Footer -->
+<section id="footer">
+	<div class="container">
+		<ul class="row">
+			<li class="col-lg-3 col-md-6 col-sm-6">
+				<h5>Contact Info</h5>
+				<p>San Francisco, CA 94114</p>
+				<p>Dolores St &, 19th St,</p>
+				<p>123-456-7890</p>
+				<p>fatarrow@gmail.com</p>
+			</li>
+			<li class="col-lg-3 col-md-6 col-sm-6">
+				<h5>Opening Hours</h5>
+				<p>Sunday 7:30am - 8:00pm</p>
+				<p>Mon-Thu 7:30am - 12:30am</p>
+				<p>Fri-Sat 7:30am - 2:00am</p>
+			</li>
+			<li class="col-lg-3 col-md-6 col-sm-6">
+				<h5>Follow Us</h5>
+				<p>
+    				<i class="fab fa-facebook-square"></i>
+					Facebook
+				</p>
+				<p>
+    				<i class="fab fa-twitter-square"></i>
+					Twitter
+				</p>
+				<p>
+    				<i class="fab fa-instagram"></i>
+					Instagram
+				</p>
+				<p>
+    				<i class="fab fa-google-plus-square"></i>
+					Google+
+				</p>
+			</li>
+			<li class="col-lg-3 col-md-6 col-sm-6">
+				<h5>Newsletter</h5>
+				<p>Subscribe To Our Newsletter to get updated on our weekly offer</p>
+    			<input type="text" name="email" placeholder="Email" autocomplete="off">
+    			<input type="submit" name="btn" value="Subscribe">
+			</li>
+		</ul>
+	</div>
+</section>
+<section id="copyright-txt">
+	<p>Copyright &copy 2019 - All Rights Reserve | Designed by <span>Alamdar Development</span></p>
+</section>
+
+
+<script type="text/javascript">
+const iconMenu = document.querySelector('#nav-icon-btn');
+const spanIcon = document.querySelectorAll('.nav-icon-txt-menu span');
+const iconBtn = document.querySelectorAll('#nav-icon-btn i');
+const lists = document.querySelectorAll('.nav-bar .upper-nav-list li');
+const listsUl = document.querySelector('.nav-bar .upper-nav-list');
+const logoTxt = document.querySelectorAll('.logo-txt span');
+const logoLine = document.querySelector('.logo-txt i');
+const listWide = document.querySelector('.nav-list-wide');
+let toggle = false;
+
+
+// Navbar //
+window.addEventListener('scroll', ()=>{
+	if(window.scrollY <= 45){
+		logoTxt.forEach((e)=>{
+          e.style.left = '0px';
+          logoLine.style.height = '55%';
+		})
+	}else{
+		logoTxt.forEach((e)=>{
+          e.style.left = '-55px';
+          logoLine.style.height = '0%'; 
+          logoLine.style.transitionDelay = '0.6s';
+		})
+	}
+})
+if(window.innerWidth <= 750){
+	smallScreenSetUp();
+
+}else{
+	WideScreenSetUp();
+}
+
+function smallScreenSetUp(){
+    listsUl.style.display = 'none';
+    iconMenu.addEventListener('click', ()=>{
+    	if(toggle === false){
+	    	toggle = true;
+	    	listWide.style.display = 'block';
+	    	setTimeout(()=>{
+	           listWide.style.opacity = '1';
+	    	}, 450)
+	    	spanIcon.forEach((span)=>{
+	           span.classList.remove('active-hide'); 
+	           span.classList.add('active-visible');
+			})
+			iconBtn.forEach((btn)=>{
+	           btn.classList.remove('active-hide');
+	           btn.classList.add('active-visible');
+			})
+	    }else{
+	    	setTimeout(()=>{
+	          listWide.style.opacity = '0';
+	    	}, 450)
+	    	toggle = false;
+	    	listWide.style.display = 'none';
+	    	spanIcon.forEach((span)=>{
+	           span.classList.remove('active-visible');    
+	           span.classList.add('active-hide');   
+			})
+			iconBtn.forEach((btn)=>{
+	           btn.classList.remove('active-visible');  
+	           btn.classList.add('active-hide');
+			})
+	    }
+    })
+}
+
+function WideScreenSetUp(){
+	iconMenu.addEventListener('click', ()=>{
+	    if(toggle === false){
+	        toggle = true;
+	        lists.forEach((list)=>{
+	           list.classList.add('active-visible'); 
+	           list.classList.remove('active-hide');
+			})
+	        spanIcon.forEach((span)=>{
+	           span.classList.remove('active-hide'); 
+	           span.classList.add('active-visible');
+			})
+			iconBtn.forEach((btn)=>{
+	           btn.classList.remove('active-hide');
+	           btn.classList.add('active-visible');
+			})
+		}else{
+			lists.forEach((list)=>{
+	           list.classList.remove('active-visible'); 
+	           list.classList.add('active-hide');
+			})
+	        spanIcon.forEach((span)=>{
+	           span.classList.remove('active-visible');    
+	           span.classList.add('active-hide');   
+			})
+			iconBtn.forEach((btn)=>{
+	           btn.classList.remove('active-visible');  
+	           btn.classList.add('active-hide');
+			})
+			toggle = false;
+		}
+	})
+}
+
+
+
+// Testimonial Function //
+const clientImg = document.querySelectorAll('.img-wrapper img');
+const clientTxt = document.querySelector('#testimonials ul');
+clientImg.forEach((e)=>{
+  e.addEventListener('mouseover', (event)=>{
+  	for (var i = 0; i < clientImg.length; i++) {
+  		clientImg[i].classList.remove('active-img');
+  	}
+  	clientImg.forEach((list)=>{
+  		if(event.target.className === 'one'){
+	       event.target.classList.add('active-img');
+	       clientTxt.style.left = '0';
+	  	}else if(event.target.className === 'two'){
+	       event.target.classList.add('active-img');
+	       clientTxt.style.left = '-100%';
+	  	}else if(event.target.className === 'three'){
+	        event.target.classList.add('active-img');
+	       clientTxt.style.left = '-200%';
+	  	}
+  	})
+  	
+  })
+})
+</script>
+</body>
+</html>
